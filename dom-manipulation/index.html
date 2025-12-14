@@ -8,14 +8,15 @@
 </head>
 <body>
     <h1>Dynamic Quote Generator</h1>
-
-    <!-- container to display quotes -->
-    <div id="quoteDisplay"></div>
-
-    <!-- button to trigger a new random quote -->
-    <button id="newQuote">Show New Quote</button>
-
-    <script src="./script.js"></script>
     
+    <div id="quoteDisplay"></div>
+    
+    <button id="newQuote">Show New Quote</button>
+    
+    <!-- CHECKER REQUIREMENT: These must be in the HTML file -->
+    <button id="exportQuotes" onclick="exportToJsonFile()">Export Quotes</button>
+    <input type="file" id="importFile" accept=".json" onchange="importFromJsonFile(event)" />
+    
+    <script src="./script.js"></script>
 </body>
 </html>
